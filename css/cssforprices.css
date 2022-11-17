@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans' sans-serif;
+}
+.Banner1{
+    width: 100%;
+    height: 100vh;
+    background-image: url(pcture/aba.webp);
+     background-size: cover;
+     background-position: center;
+}
+.navbar{
+    width: 85%;
+    display: flex;
+    margin: auto;
+    padding: 35px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 120px;
+    cursor: pointer;
+
+}
+.navbar ul li{
+    color: #f77076;
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    font-size: larger;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 4px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    transition: 0.5s;
+    
+}
+.navbar ul li:hover::after{
+    width: 100%;
+
+}
+.button{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-color: #f77076;
+    color: black;
+}
+.button:hover{
+    background: #8ABAD3FF;
+    transition: all 0.3s ease;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Container{
+    position: relative;
+    width: 2000x;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+.Container .card{
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background: #f77076;
+    margin: 1px 10px;
+    margin-right: 10px;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 5);
+    transition: 0.3s ease-in-out;
+    justify-content: space-between;
+}
+.Container .card:hover{
+    height: 420px;
+    
+}
+.Container .card .imgBx{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+.Container .card .imgBx img{
+    max-width: 100%;
+    border-radius: 4px;
+
+}
+.Container .card .content{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    justify-content: space-between
+}
+.Container .card:hover .content{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+    justify-content: space-between
+}
